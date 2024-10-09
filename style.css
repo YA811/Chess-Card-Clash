@@ -1,0 +1,132 @@
+
+
+
+
+header {
+  margin: 10px;
+ padding: 10px 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #333;
+  color: white;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+   body {
+    text-align: center;
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: system-ui, sans-serif;
+  } 
+
+  #game-container {
+     display: flex; 
+     flex-direction: column; 
+    justify-content: center; 
+     align-items: center; 
+     height: 100%; 
+    bottom: 0;
+  }
+
+.hand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gameboard{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards, .played-cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+  width: 80px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card.selected {
+  border-color: yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+.cardType.King { background-color: gold; color: #fff; }
+.cardType.Queen { background-color: purple; color: #fff; }
+.cardType.Rook { background-color: blue; color: #fff; }
+.cardType.Knight { background-color: red; color: #fff; }
+.cardType.Bishop { background-color: green; color: #fff; }
+.cardType.Pawn { background-color: lightgray; }
+
+
+
+ 
+
+#controls {
+margin-top: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#reset-game-btn{
+  font-size: large;
+display:none;
+  float: left;
+}
+
+#start-game-btn{
+  font-size: large;
+  float: left;
+  
+}
+
+#draw-card-btn {
+  font-size: large;
+}
+
+#play-card-btn {
+  font-size: large;
+}
+  
+#play-area {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hand, .play-area {
+  width: 95%;
+}

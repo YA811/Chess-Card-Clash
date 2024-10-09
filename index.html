@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Clash</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js" ></script>
 </head>
 <body>
+    <header>
+        <h1>Chess Clash</h1>
+    </header>
+    <main>
+
+     <div id="game-container" >
+
+        <!-- player 1's hand -->
+        <div id="player1-hand" class="hand">
+           <h2>player 1 hand</h2> 
+           <div class="cards"></div>
+        </div>
+     
+
+
+      <!-- Board squares will be dynamically generated here -->
+      <div id="play-area">
+        <div id="player1-play" class="play-area">
+            <h3>Player 1 Play Area</h3>
+            <div class="played-cards"></div>
+        </div>
+
+        <div id="player2-play" class="play-area">
+            <h3>Player 2 Play Area</h3>
+            <div class="played-cards"></div>
+        </div>
+    </div>
+
+
+        <!-- player 2's hand -->
+         <div id="player2-hand" class="hand">
+           <h2>player 2 hand </h2> 
+           <div class="cards"></div>
+        </div>
+        
+     </div>
+   
+        
+ 
+    </main>
+
+    <footer>
+   <div id="controls">
+            <button id="reset-game-btn">Reset Game</button>
+            <button id="start-game-btn">Start Game</button>
+            <button id="draw-card-btn">Draw Card</button>
+            <button id="play-card-btn">Play Card</button>
+          
+        </div>
+    </footer>
+    <div id="game-messages"></div>
     
 </body>
 </html>
